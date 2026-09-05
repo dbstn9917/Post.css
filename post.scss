@@ -18,10 +18,22 @@
   &--p {
     @include text;
   }
+  &--a {
+    --link-color: #1a73e8;
+
+    color: var(--link-color);
+
+    &:hover {
+      color: hsl(from var(--link-color) h s calc(l * 1.25));
+    }
+  }
 }
 
 .post--container {
   p {
     @extend .post--p;
+  }
+  a {
+    @extend .post--a;
   }
 }
