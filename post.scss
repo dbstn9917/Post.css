@@ -1,0 +1,27 @@
+@mixin text($fs: 1em, $mt: 1em, $mb: 1em, $lh: 1.5, $fw: 400) {
+  --fw: #{$fw};
+
+  font-size: $fs;
+  margin-top: $mt;
+  margin-bottom: $mb;
+  line-height: $lh;
+  font-weight: var(--fw);
+  strong {
+    font-weight: calc(var(--fw) + 200);
+  }
+  mark {
+    background-color: rgba(255, 208, 0, 0.4);
+  }
+}
+
+.post {
+  &--p {
+    @include text;
+  }
+}
+
+.post--container {
+  p {
+    @extend .post--p;
+  }
+}

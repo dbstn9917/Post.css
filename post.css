@@ -1,1 +1,14 @@
-/*# sourceMappingURL=post.css.map */
+.post--p, .post--container p {
+  --fw: 400;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-weight: var(--fw);
+}
+.post--p strong, .post--container p strong {
+  font-weight: calc(var(--fw) + 200);
+}
+.post--p mark, .post--container p mark {
+  background-color: rgba(255, 208, 0, 0.4);
+}/*# sourceMappingURL=post.css.map */
