@@ -27,6 +27,11 @@
       color: hsl(from var(--link-color) h s calc(l * 1.25));
     }
   }
+  &--blockquote {
+    margin: 0;
+    padding-left: 24px;
+    border-left: 3px solid rgb(200, 200, 200);
+  }
 }
 
 .post--container {
@@ -35,5 +40,8 @@
   }
   a {
     @extend .post--a;
+  }
+  blockquote {
+    @extend .post--blockquote;
   }
 }

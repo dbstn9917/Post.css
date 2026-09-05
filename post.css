@@ -18,4 +18,9 @@
 }
 .post--a:hover, .post--container a:hover {
   color: hsl(from var(--link-color) h s calc(l * 1.25));
+}
+.post--blockquote, .post--container blockquote {
+  margin: 0;
+  padding-left: 24px;
+  border-left: 3px solid rgb(200, 200, 200);
 }/*# sourceMappingURL=post.css.map */
