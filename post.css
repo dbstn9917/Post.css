@@ -119,7 +119,7 @@
   padding-bottom: 1.5px;
 }
 .post--ul li::marker, .post--container ul li::marker {
-  content: "•  ";
+  content: "•   ";
   color: rgb(175, 175, 175);
 }
 .post--ul li ul, .post--container ul li ul {
@@ -131,7 +131,33 @@
 .post--ul li ul::before, .post--container ul li ul::before {
   position: absolute;
   content: "";
-  left: -0.65em;
+  left: -0.865em;
+  background-color: rgb(175, 175, 175);
+  width: 0.5px;
+  height: 100%;
+}
+.post--ol, .post--container ol {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 26px;
+}
+.post--ol li, .post--container ol li {
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+.post--ol li::marker, .post--container ol li::marker {
+  color: rgb(175, 175, 175);
+}
+.post--ol li ol, .post--container ol li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 36px;
+  position: relative;
+}
+.post--ol li ol::before, .post--container ol li ol::before {
+  position: absolute;
+  content: "";
+  left: -0.865em;
   background-color: rgb(175, 175, 175);
   width: 0.5px;
   height: 100%;

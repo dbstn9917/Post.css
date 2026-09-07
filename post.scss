@@ -58,7 +58,7 @@
       padding-top: 1.5px;
       padding-bottom: 1.5px;
       &::marker {
-        content: "•  ";
+        content: "•   ";
         color: rgb(175, 175, 175);
       }
       ul {
@@ -69,7 +69,33 @@
         &::before {
           position: absolute;
           content: "";
-          left: -0.65em;
+          left: -0.865em;
+          background-color: rgb(175, 175, 175);
+          width: 0.5px;
+          height: 100%;
+        }
+      }
+    }
+  }
+  &--ol {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 26px;
+    li {
+      padding-top: 1.5px;
+      padding-bottom: 1.5px;
+      &::marker {
+        color: rgb(175, 175, 175);
+      }
+      ol {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 36px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: -0.865em;
           background-color: rgb(175, 175, 175);
           width: 0.5px;
           height: 100%;
@@ -109,5 +135,8 @@
   }
   ul {
     @extend .post--ul;
+  }
+  ol {
+    @extend .post--ol;
   }
 }
