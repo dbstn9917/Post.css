@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .post--p, .post--container p {
   --fw: 400;
   font-size: 1em;
@@ -107,4 +108,31 @@
   margin: 0;
   padding-left: 24px;
   border-left: 3px solid rgb(200, 200, 200);
+}
+.post--ul, .post--container ul {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 26px;
+}
+.post--ul li, .post--container ul li {
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+.post--ul li::marker, .post--container ul li::marker {
+  content: "•  ";
+  color: rgb(175, 175, 175);
+}
+.post--ul li ul, .post--container ul li ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 36px;
+  position: relative;
+}
+.post--ul li ul::before, .post--container ul li ul::before {
+  position: absolute;
+  content: "";
+  left: -0.65em;
+  background-color: rgb(175, 175, 175);
+  width: 0.5px;
+  height: 100%;
 }/*# sourceMappingURL=post.css.map */

@@ -50,6 +50,33 @@
     padding-left: 24px;
     border-left: 3px solid rgb(200, 200, 200);
   }
+  &--ul {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-left: 26px;
+    li {
+      padding-top: 1.5px;
+      padding-bottom: 1.5px;
+      &::marker {
+        content: "•  ";
+        color: rgb(175, 175, 175);
+      }
+      ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 36px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          left: -0.65em;
+          background-color: rgb(175, 175, 175);
+          width: 0.5px;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 .post--container {
@@ -79,5 +106,8 @@
   }
   blockquote {
     @extend .post--blockquote;
+  }
+  ul {
+    @extend .post--ul;
   }
 }
