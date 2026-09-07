@@ -114,47 +114,33 @@
   margin-bottom: 16px;
   padding-left: 26px;
 }
-.post--ul li, .post--container ul li {
-  padding-top: 1.5px;
-  padding-bottom: 1.5px;
-}
-.post--ul li::marker, .post--container ul li::marker {
+.post--ul > li::marker, .post--container ul > li::marker {
   content: "•   ";
   color: rgb(175, 175, 175);
-}
-.post--ul li ul, .post--container ul li ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 36px;
-  position: relative;
-}
-.post--ul li ul::before, .post--container ul li ul::before {
-  position: absolute;
-  content: "";
-  left: -0.865em;
-  background-color: rgb(175, 175, 175);
-  width: 0.5px;
-  height: 100%;
 }
 .post--ol, .post--container ol {
   margin-top: 16px;
   margin-bottom: 16px;
   padding-left: 26px;
 }
-.post--ol li, .post--container ol li {
+.post--ol > li::marker, .post--container ol > li::marker {
+  color: rgb(175, 175, 175);
+}
+.post--li, .post--container li {
   padding-top: 1.5px;
   padding-bottom: 1.5px;
 }
-.post--ol li::marker, .post--container ol li::marker {
-  color: rgb(175, 175, 175);
-}
-.post--ol li ol, .post--container ol li ol {
+.post--li ul, .post--container li ul,
+.post--li ol,
+.post--container li ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 36px;
   position: relative;
 }
-.post--ol li ol::before, .post--container ol li ol::before {
+.post--li ul::before, .post--container li ul::before,
+.post--li ol::before,
+.post--container li ol::before {
   position: absolute;
   content: "";
   left: -0.865em;
